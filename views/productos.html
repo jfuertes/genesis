@@ -144,7 +144,7 @@
         <li class="g-fullwidth g-menu-item g-menu-item-109 g-menu-item-link-parent g-menu-item-type-alias g-parent">
             <a class="g-menu-item-container" href="http://localhost/genesis/views/productos.html">
                 <span class="g-menu-item-content">
-                    <span class="g-menu-item-title" style="color:black">Productos</span>
+                    <span class="g-menu-item-title" style="color:white; background:#989898">Productos</span>
             	</span>
                 
                 <span class="g-menu-parent-indicator" data-g-menuparent=""></span></a>
@@ -158,17 +158,10 @@
                     <a class="g-menu-item-container" href="http://www.mojonetworks.com/?__hstc=181257784.5439219f23f886c659b85c100a20a76a.1468420565658.1468436360513.1468513061268.3&amp;__hssc=181257784.7.1468513061268&amp;__hsfp=1932744236" data-g-menuparent=""><span>Back</span></a>
                 </li>
                                                                                                 
-        <li class="g-menu-item g-menu-item-type-component g-menu-item-200  ">
-            <a class="g-menu-item-container" href="http://www.mojonetworks.com/products/products-overview?__hstc=181257784.5439219f23f886c659b85c100a20a76a.1468420565658.1468436360513.1468513061268.3&amp;__hssc=181257784.7.1468513061268&amp;__hsfp=1932744236">
-            	<span class="g-menu-item-content">
-                                                </span></a>
-                                    <span class="g-menu-item-title">Overview</span>
-                    
-                                </li>
-    
+        
                                                                             
         <li class="g-menu-item g-menu-item-type-component g-menu-item-111  ">
-            <a class="g-menu-item-container" href="http://www.mojonetworks.com/products/cloud-managed-wifi?__hstc=181257784.5439219f23f886c659b85c100a20a76a.1468420565658.1468436360513.1468513061268.3&amp;__hssc=181257784.7.1468513061268&amp;__hsfp=1932744236">
+            <a class="g-menu-item-container" href="productos.html#idCloud">
                                                                 <span class="g-menu-item-content">
                                     <span class="g-menu-item-title">Cloud Managed WiFi</span>
             
@@ -178,7 +171,7 @@
     
                                                                             
         <li class="g-menu-item g-menu-item-type-component g-menu-item-110  ">
-            <a class="g-menu-item-container" href="http://www.mojonetworks.com/products/wifi-access-points?__hstc=181257784.5439219f23f886c659b85c100a20a76a.1468420565658.1468436360513.1468513061268.3&amp;__hssc=181257784.7.1468513061268&amp;__hsfp=1932744236">
+            <a class="g-menu-item-container" href="productos.html#idAccess">
                                                                 <span class="g-menu-item-content">
                                     <span class="g-menu-item-title">Access Points</span>
             
@@ -673,13 +666,34 @@
 
 
 
-<div class="prodover2">
+<div id="idCloud" class="prodover2">
 <div class="textbox">
-<h2>Automate Your WiFi Management</h2>
-<p>Quickly monitor, troubleshoot, and make global changes with just a few clicks.</p>
-<p><a href="http://www.mojonetworks.com/products/mojo-features?__hstc=181257784.5439219f23f886c659b85c100a20a76a.1468420565658.1468436360513.1468513061268.3&amp;__hssc=181257784.7.1468513061268&amp;__hsfp=1932744236#mojo-navigator" class="button button-home">See How We Do It</a></p>
+<h2>Cloud Managed Secured Enterprise Wi-Fi</h2>
+<p>Las soluciones de Mojo Networks (antes AirTight Networks) ofrecen la mejor tecnología disponible para Wi-Fi basada en la nube (Cloud Managed WiFi). Dotados con prestaciones avanzadas como seguridad WIPS, localización geográfica, Social Wi-Fi y gestión de la conectividad de dispositivos móviles, Mojo Networks es la solución más completa, más avanzada y más segura del mercado.</p>
+<button class="button button-home toggle"><a href="#idCloudHide">Conoce mas</button></p>
+<p></p>
 </div>
 </div>
+<script type="text/javascript">
+  $(function () {
+
+    $('.toggle').click(function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        $(target).toggleClass('hidden show');
+    });
+
+});
+</script>
+<div id="idCloudHide" class=" prodover2 well hidden">
+<div class="textbox">
+<h2>Cloud Managed Secured Enterprise Wi-Fi</h2>
+<p>Las soluciones de Mojo Networks (antes AirTight Networks) ofrecen la mejor tecnología disponible para Wi-Fi basada en la nube (Cloud Managed WiFi). Dotados con prestaciones avanzadas como seguridad WIPS, localización geográfica, Social Wi-Fi y gestión de la conectividad de dispositivos móviles, Mojo Networks es la solución más completa, más avanzada y más segura del mercado.</p>
+<button class="button button-home"><a href="#">Conoce mas</button></p>
+<p></p>
+</div>
+</div>
+
 <div class="prodover3">
 <div class="textbox">
 <h2>Extend the Power of Your WiFi</h2>
@@ -690,7 +704,7 @@
 <div class="prodover4">
 <div class="textbox">
 <h2>Make Your WiFi Reliable</h2>
-<p>Intelligent 802.11ac Wave 2 access points that exceed your needs and keep your users happy.</p>
+<p id="idnuevo">Intelligent 802.11ac Wave 2 access points that exceed your needs and keep your users happy.</p>
 <p><a href="http://www.mojonetworks.com/products/wifi-access-points?__hstc=181257784.5439219f23f886c659b85c100a20a76a.1468420565658.1468436360513.1468513061268.3&amp;__hssc=181257784.7.1468513061268&amp;__hsfp=1932744236" class="button button-home">Check Out Our Fleet</a></p>
 </div>
 </div>
