@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html ng-app='angularApp'>
+    <head>
+        <meta charset="UTF-8">
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       	<meta name="description" content="GENESIS official web">
+
+        <title>Genesis - Comunication International S.A.C.</title>
+
+        <link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+    </head>
+
+    <body ng-controller='mainController'>
+        <header>
+            <hgroup>
+                <h1>Header in h1</h1>
+                <h2>Subheader in h2</h2>
+            </hgroup>
+        </header>
+
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar navegación</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logotipo</a>
+            </div>
+ 
+  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+       otro elemento que se pueda ocultar al minimizar la barra -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Enlace #1</a></li>
+      <li><a href="#">Enlace #2</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Menú #1 <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #5</a></li>
+        </ul>
+      </li>
+    </ul>
+ 
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Enlace #3</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+          Menú #2 <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Acción #1</a></li>
+          <li><a href="#">Acción #2</a></li>
+          <li><a href="#">Acción #3</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Acción #4</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+        </nav>
+
+        <section>
+            <article>
+                <header>
+                    <h1>Article #1</h1>
+                </header>
+                <section>
+                    Este es el primer artículo.  This is <mark>highlighted</mark>.
+                </section>
+            </article>
+            <article>
+                <header>
+                    <h1>Article #2</h1>
+                </header>
+                <section>
+                    Este es el segundo artículo.  Estos artículos pueden ser secciones del  log, etc. 
+                </section>
+            </article>
+        </section>
+
+        <aside>
+            <section>
+                <h1>Links</h1>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+           </section>
+
+            <figure>
+                <img width="85" height="85" src="http://www.windowsdevbootcamp.com/Images/JennMar.jpg" alt="Jennifer Marsman" />
+                <figcaption>Jennifer Marsman</figcaption>
+            </figure>
+        </aside>
+
+        <footer>Footer - Copyright 2011</footer>
+
+        <script type="text/javascript" src="lib/angular.min.js"></script>
+    </body>
+</html>
